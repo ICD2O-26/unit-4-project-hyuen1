@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Quantum Computing</title>
+
   <style>
     body {
       font-family: Verdana, sans-serif;
@@ -9,6 +10,13 @@
       margin: 40px;
       background-color: #f5f7fa;
       color: #333;
+      line-height: 1.8;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h1 {
@@ -20,10 +28,7 @@
       color: #34495e;
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
-    }
-
-    p {
-      line-height: 1.6;
+      margin-top: 35px;
     }
 
     img {
@@ -33,18 +38,11 @@
       border-radius: 10px;
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-    }
-
     ul {
       background-color: #eef2f7;
       padding: 15px;
       border-radius: 8px;
+      list-style: none;
     }
 
     a {
@@ -59,72 +57,132 @@
 
     footer {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
       font-size: 14px;
       color: #777;
     }
+
+    .tooltip {
+      position: relative;
+      cursor: help;
+      color: #8e44ad;
+      font-weight: bold;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 300px;
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: left;
+      padding: 10px;
+      border-radius: 6px;
+
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 0;
+
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 13px;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
   </style>
 </head>
 
 <body>
 
-<div class="container">
-
 <h1>Quantum Computing</h1>
 
 <p>
-Quantum computing is an emerging technology that uses the principles of quantum mechanics to process information in a completely different way than traditional computers. It has the potential to solve extremely complex problems much faster than current systems.
+Quantum computing is an emerging field of technology that uses the principles of <span class="tooltip">quantum mechanics<span class="tooltiptext">The branch of physics that studies how particles behave at extremely small scales such as atoms and electrons.</span></span> to process information in ways that traditional computers cannot. Instead of relying on simple binary logic, it uses the strange and powerful behaviour of subatomic particles to explore many possible solutions at the same time.
 </p>
 
 <img src="https://www.japan.go.jp/kizuna/_src/8001094/100000_qubit_quantum_computer_01.jpg" alt="Quantum computer hardware">
 
-<h2>What is this Technology?</h2>
+<!-- WHAT IT IS -->
+<h2>What is Quantum Computing?</h2>
+
 <p>
-Quantum computing uses quantum bits, or <b>qubits</b>, instead of regular bits. Unlike normal bits that are either 0 or 1, qubits can exist in multiple states at once due to a concept called <i>superposition</i>. This allows quantum computers to process large amounts of data simultaneously.
+Quantum computing is a new type of computing system that replaces classical bits with <span class="tooltip">qubits<span class="tooltiptext">Quantum bits that can represent 0, 1, or both states at the same time due to superposition.</span></span>. Unlike normal bits, qubits can exist in multiple states simultaneously because of a property called <span class="tooltip">superposition<span class="tooltiptext">A quantum phenomenon where a particle can exist in multiple states at once until it is measured.</span></span>. This allows quantum computers to perform many calculations at once instead of checking one possibility at a time, which makes them extremely powerful for certain complex tasks.
 </p>
 
-<h2>What Problem Does It Solve?</h2>
-<p>
-Quantum computing helps solve problems that are too complex for classical computers. This includes breaking encryption codes, simulating molecules for drug discovery, and optimizing systems like traffic or supply chains.
-</p>
-
+<!-- HOW IT WORKS -->
 <h2>How Does It Work?</h2>
+
 <p>
-Quantum computers rely on concepts like <b>superposition</b> and <b>entanglement</b>. Superposition allows qubits to represent multiple possibilities at once, while entanglement links qubits together so that changes in one affect another instantly. These features allow powerful parallel processing.
+Quantum computers work by manipulating qubits using systems such as atoms, photons, or superconducting circuits. These qubits interact through a property called <span class="tooltip">entanglement<span class="tooltiptext">A quantum connection where two particles remain linked so that the state of one instantly affects the other, even across distance.</span></span>, which allows information to be shared instantly between them. Together with quantum gates and controlled operations, these effects allow the system to process huge amounts of information in parallel rather than sequentially like a normal computer.
 </p>
 
+<!-- PROBLEMS IT SOLVES -->
+<h2>What Problems Does It Solve?</h2>
+
+<p>
+Quantum computing is designed to solve problems that are too complex for classical computers to handle efficiently. For example, it can improve <span class="tooltip">encryption<span class="tooltiptext">The process of securing data by converting it into coded form so only authorized users can read it.</span></span> systems, simulate chemical reactions for <span class="tooltip">drug discovery<span class="tooltiptext">Using computer models to simulate molecules and help design new medicines faster.</span></span>, and solve large-scale <span class="tooltip">optimization<span class="tooltiptext">Finding the most efficient solution among many possible choices, such as delivery routes or scheduling.</span></span> problems. These are tasks where classical computers struggle because they require testing too many possibilities.
+</p>
+
+<!-- WHERE USED -->
 <h2>Where Is It Used Today?</h2>
+
 <p>
-Although still developing, quantum computing is used in research and industries such as medicine, finance, cybersecurity, and artificial intelligence. Companies like IBM and Google are actively developing this technology.
+Although quantum computing is still in early development, it is already being researched by major technology companies like IBM, Google, and Microsoft. These organizations are using experimental quantum systems to explore applications in fields such as artificial intelligence, cybersecurity, and financial modeling. While it is not yet widely used in everyday life, it is considered a major future technology that could change many industries.
 </p>
 
+<!-- IMPACTS -->
 <h2>Positive Impacts</h2>
+
 <p>
-Quantum computing could lead to faster drug discovery, improved climate modeling, and more efficient transportation systems. It has the potential to solve major global challenges.
+Quantum computing could have major positive impacts on society by accelerating scientific research and solving problems that currently take years or even decades. It could improve medical research by simulating molecules more accurately, enhance <span class="tooltip">AI systems<span class="tooltiptext">Artificial intelligence systems that can learn and make decisions based on data.</span></span>, and help predict climate change more precisely. It could also make large systems like transportation and logistics much more efficient.
 </p>
 
 <h2>Negative Impacts</h2>
+
 <p>
-One major concern is that quantum computers could break current encryption systems, making data less secure. There are also concerns about job loss and the ethical use of such powerful technology.
+Despite its benefits, quantum computing also raises concerns. One major issue is that it could break modern encryption systems, putting digital security at risk. It is also extremely expensive and difficult to build, requiring very advanced technology and stable environments. Additionally, there are ethical concerns about how such powerful computing ability might be used in the future.
 </p>
 
-<h2>Key Facts</h2>
+<!-- WORD BANK -->
+<h2>Word Bank (Hover for Definitions)</h2>
+
 <ul>
-  <li>Uses qubits instead of traditional bits</li>
-  <li>Can process many calculations at once</li>
-  <li>Still in early stages of development</li>
+
+  <li><span class="tooltip">Quantum Computing<span class="tooltiptext">A computing system based on quantum physics that can solve complex problems faster than classical computers.</span></span></li>
+
+  <li><span class="tooltip">Qubit<span class="tooltiptext">A quantum version of a bit that can exist as 0, 1, or both at the same time.</span></span></li>
+
+  <li><span class="tooltip">Superposition<span class="tooltiptext">The ability of a quantum system to exist in multiple states at once.</span></span></li>
+
+  <li><span class="tooltip">Entanglement<span class="tooltiptext">A connection between particles where one instantly affects another.</span></span></li>
+
+  <li><span class="tooltip">Encryption<span class="tooltiptext">A method of securing data by converting it into unreadable code.</span></span></li>
+
+  <li><span class="tooltip">Optimization<span class="tooltiptext">Finding the most efficient solution to a problem.</span></span></li>
+
+  <li><span class="tooltip">Drug Discovery<span class="tooltiptext">The process of finding new medicines using simulations and research.</span></span></li>
+
+  <li><span class="tooltip">AI (Artificial Intelligence)<span class="tooltiptext">Computer systems that can learn, reason, and make decisions like humans.</span></span></li>
+
 </ul>
 
-<p>
-Learn more:
-<a href="https://www.ibm.com/quantum" target="_blank">IBM Quantum Computing</a>
-</p>
+<!-- SOURCES -->
+<h2>Sources</h2>
+
+<ul>
+  <li><a href="https://www.ibm.com/quantum" target="_blank">IBM Quantum Computing</a></li>
+  <li><a href="https://quantum.country/" target="_blank">Quantum Country</a></li>
+  <li><a href="https://www.britannica.com/technology/quantum-computing" target="_blank">Encyclopedia Britannica</a></li>
+  <li><a href="https://www.nature.com/subjects/quantum-information" target="_blank">Nature Quantum Information</a></li>
+</ul>
 
 <footer>
   Created by: Ryan Yuen
 </footer>
-
-</div>
 
 </body>
 </html>
